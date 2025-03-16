@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智慧 AMR 可视化信息管理中心</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/logo.svg" alt="SEER Logo">
+        </div>
+        <h1>智慧 AMR 可视化信息管理中心</h1>
+        <div class="time-display" id="time-display">2025-03-12 20:13</div>
+    </header>
+
+    <div class="container">
+        <div class="dashboard">
+            <!-- 左侧面板 -->
+            <div class="panel left-panel">
+                <div class="panel-section" id="amr-status">
+                    <h2>AMR 状态分布</h2>
+                    <div class="status-grid">
+                        <div class="status-box">
+                            <h3>7<span>台</span></h3>
+                            <p>总数</p>
+                        </div>
+                        <div class="status-box">
+                            <h3>7<span>台</span></h3>
+                            <p>投入</p>
+                        </div>
+                        <div class="status-box">
+                            <h3>0<span>台</span></h3>
+                            <p>离线</p>
+                        </div>
+                        <div class="status-box">
+                            <h3>4<span>台</span></h3>
+                            <p>运送</p>
+                        </div>
+                        <div class="status-box">
+                            <h3>2<span>台</span></h3>
+                            <p>充电</p>
+                        </div>
+                        <div class="status-box">
+                            <h3>1<span>台</span></h3>
+                            <p>空闲</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="panel-section" id="amr-daily-task">
+                    <h2>AMR 当日接单数量</h2>
+                    <div class="task-info">
+                        <div class="task-item">
+                            <span class="label">平均接单数</span>
+                            <span class="value">49<span class="unit">单</span></span>
+                        </div>
+                        <div class="task-item">
+                            <span class="label">接单总数</span>
+                            <span class="value">831<span class="unit">单</span></span>
+                        </div>
+                    </div>
+                    <div class="chart-container" id="daily-task-chart"></div>
+                </div>
+
+                <div class="panel-section" id="amr-daily-rate">
+                    <h2>AMR 当日执行效率</h2>
+                    <div class="task-info">
+                        <div class="task-item">
+                            <span class="label">平均执行效率</span>
+                            <span class="value">89<span class="unit">%</span></span>
+                        </div>
+                    </div>
+                    <div class="chart-container" id="daily-rate-chart"></div>
+                </div>
+
+                <div class="panel-section" id="amr-weekly-trend">
+                    <h2>AMR 近一周执行效率趋势</h2>
+                    <div class="task-info">
+                        <div class="task-item">
+                            <span class="label">平均执行效率</span>
+                            <span class="value">77<span class="unit">%</span></span>
+                        </div>
+                    </div>
+                    <div class="chart-container" id="weekly-trend-chart"></div>
+                </div>
+            </div>
+
+            <!-- 中间地图区域 -->
+            <div class="map-container" id="scada-map"></div>
+
+            <!-- 右侧面板 -->
+            <div class="panel right-panel">
+                <div class="panel-section" id="task-completion-rate">
+                    <h2>任务执行完成率</h2>
+                    <div class="task-info">
+                        <div class="task-item">
+                            <span class="label">已完成</span>
+                            <span class="value">15<span class="unit">个</span></span>
+                        </div>
+                        <div class="task-item">
+                            <span class="label">任务总数量</span>
+                            <span class="value">20<span class="unit">个</span></span>
+                        </div>
+                    </div>
+                    <div class="completion-gauge" id="completion-gauge">
+                        <div class="gauge-value">75</div>
+                    </div>
+                </div>
+
+                <div class="panel-section" id="task-execution">
+                    <h2>任务执行情况</h2>
+                    <div class="task-table" id="task-table">
+                        <!-- 任务表格将由JS动态生成 -->
+                    </div>
+                </div>
+
+                <div class="panel-section" id="weekly-comparison">
+                    <h2>任务近一周完成异常对比</h2>
+                    <div class="task-info">
+                        <div class="task-item">
+                            <span class="label">完成数量</span>
+                            <span class="value">47<span class="unit">个</span></span>
+                        </div>
+                        <div class="task-item">
+                            <span class="label">异常数量</span>
+                            <span class="value">19<span class="unit">个</span></span>
+                        </div>
+                    </div>
+                    <div class="chart-container" id="weekly-comparison-chart"></div>
+                </div>
+
+                <div class="panel-section" id="weekly-trend">
+                    <h2>任务近一周完成情况趋势</h2>
+                    <div class="task-info">
+                        <div class="task-item">
+                            <span class="label">完成数量</span>
+                            <span class="value">47<span class="unit">个</span></span>
+                        </div>
+                        <div class="task-item">
+                            <span class="label">任务总数量</span>
+                            <span class="value">66<span class="unit">个</span></span>
+                        </div>
+                    </div>
+                    <div class="chart-container" id="weekly-task-chart"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="legend">
+            <div class="legend-item">
+                <span class="legend-color path"></span>
+                <span>路径</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color complete"></span>
+                <span>完成</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color abnormal"></span>
+                <span>异常</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="node_modules/pixi.js/dist/pixi.min.js"></script>
+    <script src="node_modules/chart.js/dist/chart.umd.js"></script>
+    <script src="js/time.js"></script>
+    <script src="js/scada.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 

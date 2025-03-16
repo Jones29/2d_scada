@@ -1,0 +1,120 @@
+{
+    "amr_status": {
+        "total": 7,
+        "active": 7,
+        "offline": 0,
+        "delivering": 4,
+        "charging": 2,
+        "idle": 1
+    },
+    "daily_tasks": {
+        "average": 49,
+        "total": 831,
+        "hourly_data": [
+            {"hour": 0, "count": 25},
+            {"hour": 1, "count": 18},
+            {"hour": 2, "count": 15},
+            {"hour": 3, "count": 12},
+            {"hour": 4, "count": 10},
+            {"hour": 5, "count": 8},
+            {"hour": 6, "count": 20},
+            {"hour": 7, "count": 35},
+            {"hour": 8, "count": 45},
+            {"hour": 9, "count": 48},
+            {"hour": 10, "count": 42},
+            {"hour": 11, "count": 38},
+            {"hour": 12, "count": 35},
+            {"hour": 13, "count": 40},
+            {"hour": 14, "count": 45},
+            {"hour": 15, "count": 50},
+            {"hour": 16, "count": 48},
+            {"hour": 17, "count": 45},
+            {"hour": 18, "count": 40},
+            {"hour": 19, "count": 35},
+            {"hour": 20, "count": 30},
+            {"hour": 21, "count": 25},
+            {"hour": 22, "count": 22},
+            {"hour": 23, "count": 20}
+        ]
+    },
+    "daily_efficiency": {
+        "average": 89,
+        "amr_data": [
+            {"id": "SFL-CD020", "efficiency": 92},
+            {"id": "SFL-CD014", "efficiency": 88},
+            {"id": "AMR-800K", "efficiency": 95},
+            {"id": "AMR-900J", "efficiency": 87},
+            {"id": "AMR-700T", "efficiency": 91},
+            {"id": "SFL-CD019", "efficiency": 86},
+            {"id": "AMR-850X", "efficiency": 89}
+        ]
+    },
+    "weekly_efficiency": {
+        "average": 77,
+        "daily_data": [
+            {"date": "3.11", "efficiency": 82},
+            {"date": "3.12", "efficiency": 78},
+            {"date": "3.13", "efficiency": 75},
+            {"date": "3.14", "efficiency": 80},
+            {"date": "3.15", "efficiency": 76},
+            {"date": "3.16", "efficiency": 73},
+            {"date": "3.17", "efficiency": 77}
+        ]
+    },
+    "task_completion": {
+        "completed": 15,
+        "total": 20,
+        "rate": 75
+    },
+    "task_execution": {
+        "tasks": [
+            {
+                "id": "T2025031701",
+                "amr": "AMR-800K",
+                "start_time": "09:15",
+                "status": "完成",
+                "duration": "5分钟"
+            },
+            {
+                "id": "T2025031702",
+                "amr": "AMR-900J",
+                "start_time": "09:20",
+                "status": "进行中",
+                "duration": "3分钟"
+            },
+            {
+                "id": "T2025031703",
+                "amr": "SFL-CD020",
+                "start_time": "09:25",
+                "status": "等待",
+                "duration": "-"
+            }
+        ]
+    },
+    "weekly_comparison": {
+        "completed": 47,
+        "abnormal": 19,
+        "daily_data": [
+            {"date": "3.11", "completed": 8, "abnormal": 2},
+            {"date": "3.12", "completed": 7, "abnormal": 3},
+            {"date": "3.13", "completed": 6, "abnormal": 4},
+            {"date": "3.14", "completed": 9, "abnormal": 2},
+            {"date": "3.15", "completed": 5, "abnormal": 3},
+            {"date": "3.16", "completed": 6, "abnormal": 2},
+            {"date": "3.17", "completed": 6, "abnormal": 3}
+        ]
+    },
+    "weekly_task_trend": {
+        "completed": 47,
+        "total": 66,
+        "daily_data": [
+            {"date": "3.11", "total": 10, "completed": 8, "rate": 80},
+            {"date": "3.12", "total": 9, "completed": 7, "rate": 77.8},
+            {"date": "3.13", "total": 11, "completed": 6, "rate": 54.5},
+            {"date": "3.14", "total": 12, "completed": 9, "rate": 75},
+            {"date": "3.15", "total": 8, "completed": 5, "rate": 62.5},
+            {"date": "3.16", "total": 8, "completed": 6, "rate": 75},
+            {"date": "3.17", "total": 8, "completed": 6, "rate": 75}
+        ]
+    }
+} 
