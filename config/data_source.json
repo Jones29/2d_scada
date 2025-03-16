@@ -1,0 +1,379 @@
+{
+  "version": "1.0",
+  "dataSource": {
+    "storage": {
+      "locations": [
+        {
+          "id": "L1",
+          "name": "货位1",
+          "coordinates": {
+            "x": -200,
+            "y": -200
+          },
+          "size": {
+            "width": 80,
+            "height": 80
+          },
+          "status": "empty",
+          "maxCapacity": 1000,
+          "currentCapacity": 0,
+          "tags": {
+            "temperature": {
+              "address": "DB100.DBD0",
+              "type": "float",
+              "unit": "°C"
+            },
+            "humidity": {
+              "address": "DB100.DBD4",
+              "type": "float",
+              "unit": "%"
+            },
+            "occupancy": {
+              "address": "DB100.DBX8.0",
+              "type": "bool"
+            }
+          }
+        },
+        {
+          "id": "L2",
+          "name": "货位2",
+          "coordinates": {
+            "x": 0,
+            "y": -200
+          },
+          "size": {
+            "width": 80,
+            "height": 80
+          },
+          "status": "occupied",
+          "maxCapacity": 1000,
+          "currentCapacity": 800,
+          "tags": {
+            "temperature": {
+              "address": "DB101.DBD0",
+              "type": "float",
+              "unit": "°C"
+            },
+            "humidity": {
+              "address": "DB101.DBD4",
+              "type": "float",
+              "unit": "%"
+            },
+            "occupancy": {
+              "address": "DB101.DBX8.0",
+              "type": "bool"
+            }
+          }
+        },
+        {
+          "id": "L3",
+          "name": "货位3",
+          "coordinates": {
+            "x": 200,
+            "y": -200
+          },
+          "size": {
+            "width": 80,
+            "height": 80
+          },
+          "status": "empty",
+          "maxCapacity": 1000,
+          "currentCapacity": 0,
+          "tags": {
+            "temperature": {
+              "address": "DB102.DBD0",
+              "type": "float",
+              "unit": "°C"
+            },
+            "humidity": {
+              "address": "DB102.DBD4",
+              "type": "float",
+              "unit": "%"
+            },
+            "occupancy": {
+              "address": "DB102.DBX8.0",
+              "type": "bool"
+            }
+          }
+        },
+        {
+          "id": "L4",
+          "name": "货位4",
+          "coordinates": {
+            "x": -200,
+            "y": 0
+          },
+          "size": {
+            "width": 80,
+            "height": 80
+          },
+          "status": "empty",
+          "maxCapacity": 1000,
+          "currentCapacity": 0,
+          "tags": {
+            "temperature": {
+              "address": "DB103.DBD0",
+              "type": "float",
+              "unit": "°C"
+            },
+            "humidity": {
+              "address": "DB103.DBD4",
+              "type": "float",
+              "unit": "%"
+            },
+            "occupancy": {
+              "address": "DB103.DBX8.0",
+              "type": "bool"
+            }
+          }
+        },
+        {
+          "id": "L5",
+          "name": "货位5",
+          "coordinates": {
+            "x": 0,
+            "y": 0
+          },
+          "size": {
+            "width": 80,
+            "height": 80
+          },
+          "status": "occupied",
+          "maxCapacity": 1000,
+          "currentCapacity": 500,
+          "tags": {
+            "temperature": {
+              "address": "DB104.DBD0",
+              "type": "float",
+              "unit": "°C"
+            },
+            "humidity": {
+              "address": "DB104.DBD4",
+              "type": "float",
+              "unit": "%"
+            },
+            "occupancy": {
+              "address": "DB104.DBX8.0",
+              "type": "bool"
+            }
+          }
+        },
+        {
+          "id": "L6",
+          "name": "货位6",
+          "coordinates": {
+            "x": 200,
+            "y": 0
+          },
+          "size": {
+            "width": 80,
+            "height": 80
+          },
+          "status": "empty",
+          "maxCapacity": 1000,
+          "currentCapacity": 0,
+          "tags": {
+            "temperature": {
+              "address": "DB105.DBD0",
+              "type": "float",
+              "unit": "°C"
+            },
+            "humidity": {
+              "address": "DB105.DBD4",
+              "type": "float",
+              "unit": "%"
+            },
+            "occupancy": {
+              "address": "DB105.DBX8.0",
+              "type": "bool"
+            }
+          }
+        },
+        {
+          "id": "L7",
+          "name": "货位7",
+          "coordinates": {
+            "x": -200,
+            "y": 200
+          },
+          "size": {
+            "width": 80,
+            "height": 80
+          },
+          "status": "occupied",
+          "maxCapacity": 1000,
+          "currentCapacity": 600,
+          "tags": {
+            "temperature": {
+              "address": "DB106.DBD0",
+              "type": "float",
+              "unit": "°C"
+            },
+            "humidity": {
+              "address": "DB106.DBD4",
+              "type": "float",
+              "unit": "%"
+            },
+            "occupancy": {
+              "address": "DB106.DBX8.0",
+              "type": "bool"
+            }
+          }
+        },
+        {
+          "id": "L8",
+          "name": "货位8",
+          "coordinates": {
+            "x": 0,
+            "y": 200
+          },
+          "size": {
+            "width": 80,
+            "height": 80
+          },
+          "status": "empty",
+          "maxCapacity": 1000,
+          "currentCapacity": 0,
+          "tags": {
+            "temperature": {
+              "address": "DB107.DBD0",
+              "type": "float",
+              "unit": "°C"
+            },
+            "humidity": {
+              "address": "DB107.DBD4",
+              "type": "float",
+              "unit": "%"
+            },
+            "occupancy": {
+              "address": "DB107.DBX8.0",
+              "type": "bool"
+            }
+          }
+        },
+        {
+          "id": "L9",
+          "name": "货位9",
+          "coordinates": {
+            "x": 200,
+            "y": 200
+          },
+          "size": {
+            "width": 80,
+            "height": 80
+          },
+          "status": "occupied",
+          "maxCapacity": 1000,
+          "currentCapacity": 900,
+          "tags": {
+            "temperature": {
+              "address": "DB108.DBD0",
+              "type": "float",
+              "unit": "°C"
+            },
+            "humidity": {
+              "address": "DB108.DBD4",
+              "type": "float",
+              "unit": "%"
+            },
+            "occupancy": {
+              "address": "DB108.DBX8.0",
+              "type": "bool"
+            }
+          }
+        }
+      ]
+    },
+    "vehicles": [
+      {
+        "id": "AGV-001",
+        "name": "AGV-1号",
+        "type": "AGV",
+        "status": "running",
+        "position": {
+          "x": -200,
+          "y": -200
+        },
+        "tags": {
+          "position_x": {
+            "address": "DB200.DBD0",
+            "type": "float",
+            "unit": "mm"
+          },
+          "position_y": {
+            "address": "DB200.DBD4",
+            "type": "float",
+            "unit": "mm"
+          },
+          "battery": {
+            "address": "DB200.DBD8",
+            "type": "float",
+            "unit": "%"
+          },
+          "speed": {
+            "address": "DB200.DBD12",
+            "type": "float",
+            "unit": "m/s"
+          },
+          "error_code": {
+            "address": "DB200.DBW16",
+            "type": "int"
+          },
+          "is_running": {
+            "address": "DB200.DBX18.0",
+            "type": "bool"
+          }
+        }
+      },
+      {
+        "id": "AGV-002",
+        "name": "AGV-2号",
+        "type": "AGV",
+        "status": "running",
+        "position": {
+          "x": 200,
+          "y": 200
+        },
+        "tags": {
+          "position_x": {
+            "address": "DB201.DBD0",
+            "type": "float",
+            "unit": "mm"
+          },
+          "position_y": {
+            "address": "DB201.DBD4",
+            "type": "float",
+            "unit": "mm"
+          },
+          "battery": {
+            "address": "DB201.DBD8",
+            "type": "float",
+            "unit": "%"
+          },
+          "speed": {
+            "address": "DB201.DBD12",
+            "type": "float",
+            "unit": "m/s"
+          },
+          "error_code": {
+            "address": "DB201.DBW16",
+            "type": "int"
+          },
+          "is_running": {
+            "address": "DB201.DBX18.0",
+            "type": "bool"
+          }
+        }
+      }
+    ]
+  },
+  "communication": {
+    "protocol": "S7",
+    "connection": {
+      "ip": "192.168.1.100",
+      "rack": 0,
+      "slot": 1
+    },
+    "polling_rate": 100
+  }
+} 
